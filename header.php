@@ -21,13 +21,23 @@
 		SyntaxHighlighter.config.clipboardSwf = '<?php bloginfo('template_url'); ?>/scripts/clipboard.swf';
 		SyntaxHighlighter.all();
 	</script>
+  <style>
+    div.syntitle {margin:0 !important;}
+    div.syntitle .lines.no-wrap {overflow-x:hidden !important;}
+    div.syntitle .line .number {width:1.5em !important;}
+    div.syntitle .line .content {margin-left:1.7em !important;}
+  </style>
 </head>
 <body<?php if(is_single()) echo ' class="single"'; ?>>
 <div id="notify"></div>
 
 <div id="header">
 	<div class="sleeve">
-		<h1><a href="<?php bloginfo( 'url' ); ?>/"><?php bloginfo( 'name' ); ?></a></h1>
+    <h1 style="font-size:250%;">
+<a href="<?php bloginfo( 'url' ); ?>/"><pre class="brush:js; wrap-lines:false; class-name:syntitle; toolbar:false;">
+while(true){
+    $('#britg').load('/coffee');
+}<?php //bloginfo( 'name' ); ?></pre></a></h1>
 			<?php if(get_bloginfo('description')) : ?><small><?php bloginfo( 'description' ); ?></small><?php endif; ?>
 	</div>
 </div>
