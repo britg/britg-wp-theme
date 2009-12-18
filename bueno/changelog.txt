@@ -1,0 +1,14 @@
+*** Bueno Changelog ***
+
+2009.11.25 - version 1.0.2
+ * style.css - Added hover style to category navigation
+ * includes/theme-widgets.php - Fixed margin below Featured Post widget
+
+2009.11.25 - version 1.0.1
+ * includes/theme-widgets.php - Fixed the single template bug in the featured post sidebar linking the image to it's source and not the relative post.	
+	
+2009.11.05 - version 1.0
+ * First release!	
+	
+2009.11.05 - version 1.0
+ * First release!
