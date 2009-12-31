@@ -31,6 +31,10 @@
 <?php if ( is_single() ) wp_enqueue_script( 'comment-reply' ); ?>
 <?php wp_head(); ?>
 
+  <style>
+    a.projectLink {display:block;float:right;position:relative;z-index:1;}
+    a.projectLink:hover img {color:#17517B;}
+  </style>
 
 </head>
 
@@ -57,13 +61,13 @@
         
 	</div><!-- /#navigation -->
         
-	<div id="header" class="col-full">
+	<div id="header" class="col-full" style="padding-bottom:0;">
    
 		<div id="logo" class="fl">
 	       
 	       	<!--<a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('description'); ?>"><img class="title" src="<?php if ( get_option('woo_logo') <> "" ) { echo get_option('woo_logo'); } else { bloginfo('template_directory'); ?>/images/logo.png<?php } ?>" alt="<?php bloginfo('name'); ?>" /></a>-->
-          <h1 style="font-size:500%;"><a href="/" style="color:#000;">britg.com</a></h1>
-	      		<span class="site-title" style="display:block;" ><a href="<?php bloginfo('url'); ?>" style="text-decoration:none;font-size:150%;"><?php bloginfo('name'); ?></a></span>
+          <h1 style="font-size:500%;"><a href="/" style="color:#000;">Brit Gardner</a></h1>
+	      		<span class="site-title" style="display:block;" ><a href="<?php bloginfo('url'); ?>" style="text-decoration:none;font-size:150%;">Y2K Preparedness Expert</a></span>
 	      	
 	      	<?php if(is_single() || is_page()) : ?>
 	      		<span class="site-title"><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></span>
@@ -87,3 +91,8 @@
 	    </div><!-- /#pagenav -->
        
 	</div><!-- /#header -->
+  <div id="projects" class="col-full" style="margin-top:-20px; margin-bottom:20px;">
+    <div class="project" style="float:right; margin-left:10px;">
+    <a class="projectLink" href="http://scriptstack.com/" style="color:#9FCEF1;" title="Organize and share javascripts"><img src="http://britg.com/blog/wp-content/uploads/2009/12/scriptstack.png" style="height:36px; width:163px; border:solid 5px;" /></a>
+    </div>
+  </div>
